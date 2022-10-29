@@ -8,10 +8,19 @@ const Home = () => {
         <title>Christ Church - Home</title>
       </Head>
       <div className="home-container">
-        <h1>Home Page</h1>
-        <Link href='/about'>
-          <h2>About</h2>
-        </Link>
+        <div className="hero-container">
+          <div className="hero-container-links">
+            <Link href='/about'>
+              <button>About Christ Church</button>
+            </Link>
+            <Link href='/about'>
+              <button>Worship With Us</button>
+            </Link>
+            <Link href='/about'>
+              <button>Sermons</button>
+            </Link>
+          </div>
+        </div>
       </div>
     </>
   )
