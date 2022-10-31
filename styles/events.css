@@ -1,0 +1,38 @@
+.events-container {
+  margin-block: 2rem;
+  border-top: 1px solid rgba(48, 105, 179, 0.5);
+}
+
+.events-header h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 3rem;
+}
+
+.events {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.event {
+  position: relative;
+  margin: auto;
+}
+
+.event h1 {
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.event-image {
+  position: relative;
+  filter: opacity(50%);
+}
+
+.event-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1rem;
+}

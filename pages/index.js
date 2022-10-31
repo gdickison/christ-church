@@ -1,5 +1,6 @@
 import Head from "next/head"
 import Link from "next/link"
+import Events from "../components/Events"
 
 const Home = () => {
   return (
@@ -21,6 +22,10 @@ const Home = () => {
             </Link>
           </div>
         </div>
+        <div style={{textAlign: 'center', marginBlock: '3.5rem;'}}>
+          <h1>You are warmly welcome to join us for one of our Lord’s Day worship services!</h1>
+        </div>
+        <Events/>
       </div>
     </>
   )
