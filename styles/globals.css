@@ -53,20 +53,20 @@ a {
 }
 
 .hero-container-links button {
-  padding-block: 1rem;
+  padding-block: 2rem;
   width: 16rem;
-  background-color: rgba(48, 105, 179, 1);
+  background-color: rgba(255,255,255,0);
   border: none;
   color: #fff;
   font-size: 1.2rem;
   text-transform: uppercase;
-  border-radius: 5px;
+  border: 2px rgba(48, 105, 225, 1) solid;
+  border-radius: 2px;
   transition-duration: 300ms;
 }
 
 .hero-container-links button:hover {
   cursor: pointer;
   background-color: rgba(48, 105, 225, 1);
-  transform: scale(1.075);
   transition-duration: 300ms;
 }
