@@ -42,6 +42,7 @@ a {
   background-position: center;
   background-size: 100%;
   width: 100%;
+  filter: brightness(150%);
 }
 
 .hero-container-links {
@@ -53,20 +54,21 @@ a {
 }
 
 .hero-container-links button {
-  padding-block: 2rem;
+  padding-block: 1.5rem;
   width: 16rem;
-  background-color: rgba(255,255,255,0.1);
+  background-color: rgba(48, 105, 179, 1);
   border: none;
   color: #fff;
   font-size: 1.2rem;
   text-transform: uppercase;
-  border: 2px rgba(48, 105, 225, 1) solid;
+  border: 2px rgba(48, 105, 179, 1) solid;
   border-radius: 2px;
   transition-duration: 300ms;
 }
 
 .hero-container-links button:hover {
   cursor: pointer;
-  background-color: rgba(48, 105, 225, 1);
+  background-color: rgba(6, 65, 192, 1);
+  border: 2px rgba(6, 65, 192, 1) solid;
   transition-duration: 300ms;
 }

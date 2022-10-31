@@ -11,16 +11,19 @@ const NavMenu = () => {
       </Link>
       <li className="nav-menu-links">
         <ul className="nav-menu-link">
-          <Link href='#'>Get Involved</Link>
-        </ul>
-        <ul className="nav-menu-link">
           <Link href='#'>Events</Link>
         </ul>
         <ul className="nav-menu-link">
-          <Link href='#'>Contact</Link>
+          <Link href='https://www.christkirk.com/music-library/'>Music</Link>
         </ul>
         <ul className="nav-menu-link">
-          <Link href='#'>Give</Link>
+          <Link href='https://www.christkirk.com/get-involved/'>Get Involved</Link>
+        </ul>
+        <ul className="nav-menu-link">
+          <Link href='https://www.christkirk.com/give/'>Give</Link>
+        </ul>
+        <ul className="nav-menu-link">
+          <Link href='mailto:office@christKirk.com'>Contact</Link>
         </ul>
       </li>
       <div className="nav-menu-burger">
