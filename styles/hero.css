@@ -1,0 +1,38 @@
+.hero-container {
+  position: relative;
+  height: 800px;
+  background-image: url(/home_hero.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  width: 100%;
+  filter: brightness(150%);
+}
+
+.hero-container-links {
+  position: absolute;
+  top: 75%;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.hero-container-links button {
+  padding-block: 1.5rem;
+  width: 16rem;
+  background-color: rgba(48, 105, 179, 1);
+  border: none;
+  color: #fff;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  border: 2px rgba(48, 105, 179, 1) solid;
+  border-radius: 2px;
+  transition-duration: 300ms;
+}
+
+.hero-container-links button:hover {
+  cursor: pointer;
+  background-color: rgba(6, 65, 192, 1);
+  border: 2px rgba(6, 65, 192, 1) solid;
+  transition-duration: 300ms;
+}

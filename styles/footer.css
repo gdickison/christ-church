@@ -1,0 +1,44 @@
+.footer-container {
+  margin-top: 1rem;
+  border-top: 1px rgba(48, 105, 179, 1) solid;
+  padding: 4rem 6rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-container h1 {
+  text-transform: uppercase;
+  font-weight: 100;
+}
+
+.footer-container h2 {
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.footer-email:hover {
+  text-decoration: underline;
+}
+
+.footer-address:hover {
+  text-decoration: underline;
+}
+
+.footer-address p {
+  margin-block: 0.5rem;
+}
+
+.footer-col3 {
+  max-width: 40%;
+}
+
+.footer-col3 p {
+  line-height: 2rem;
+}
+
+.footer-social {
+  display: flex;
+  align-items: center;
+  max-width: 50%;
+  justify-content: space-between;
+}
