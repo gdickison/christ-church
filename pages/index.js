@@ -10,6 +10,10 @@ const Home = () => {
       </Head>
       <div className="home-container">
         <div className="hero-container">
+          <div className="hero-headline">
+            <h1>Christ Church</h1>
+            <h2>All of Christ, for All of Life, for All of Moscow</h2>
+          </div>
           <div className="hero-container-links">
             <Link href='/about'>
               <button>About Christ Church</button>
