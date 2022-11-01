@@ -1,49 +1,60 @@
-import SectionTabs from "./SectionTabs"
 import { useState } from "react"
+import SectionTabs from "./SectionTabs"
 
-const PageTabs = () => {
-  const [pageTabValue, setPageTabValue] = useState('first')
+export default function PageTabs(){
+  const [openPageTab, setOpenPageTab] = useState('leadership')
 
-  const handlePageTabChange = e => {
-    console.log(e.target.value)
-    setPageTabValue(e.target.value)
-  }
 
-  return (
+  return(
     <div className="page-tabs-container">
-      <h1>About Christ Church</h1>
-      <div className="page-tabs">
-        <div className="page-tab">
-          <input type="radio" id="page-tab-1" name="page-tabs" value='first' checked={pageTabValue === 'first'} onChange={handlePageTabChange}/>
-          <label className="page-tab-label" htmlFor="page-tab-1">Leadership</label>
-          <div className="page-tab-content">
+      <div className="page-tabs-content">
+        <ul className="page-tabs-list">
+          <li className="page-tabs-list-item">
+            <a
+              href="#"
+              onClick={() => setOpenPageTab('leadership')}
+              className={`page-tabs-list-item-link ${openPageTab === 'leadership' ? 'open-tab' : ''}`}>Leadership</a>
+          </li>
+          <li className="page-tabs-list-item">
+            <a
+              href="#"
+              onClick={() => setOpenPageTab('history')}
+              className={`page-tabs-list-item-link ${openPageTab === 'history' ? 'open-tab' : ''}`}>History</a>
+          </li>
+          <li className="page-tabs-list-item">
+            <a
+              href="#"
+              onClick={() => setOpenPageTab('doctrine')}
+              className={`page-tabs-list-item-link ${openPageTab === 'doctrine' ? 'open-tab' : ''}`}>Doctrine</a>
+          </li>
+          <li className="page-tabs-list-item">
+            <a
+              href="#"
+              onClick={() => setOpenPageTab('crec')}
+              className={`page-tabs-list-item-link ${openPageTab === 'crec' ? 'open-tab' : ''}`}>CREC</a>
+          </li>
+        </ul>
+        <div className={`open-page-tab-container ${openPageTab === 'leadership' ? 'show' : 'hide'}`}>
+          <div className="open-page-tab-content">
             <SectionTabs/>
           </div>
         </div>
-        <div className="page-tab">
-          <input type="radio" id="page-tab-2" name="page-tabs" value='second' checked={pageTabValue === 'second'} onChange={handlePageTabChange}/>
-          <label className="page-tab-label" htmlFor="page-tab-2">History</label>
-          <div className="page-tab-content">
-            <p>TWO - Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis libero iure quos molestias, autem hic odio tenetur. Possimus eveniet impedit placeat illum temporibus. Blanditiis cupiditate voluptates nesciunt neque tempore nisi.</p>
+        <div className={`open-page-tab-container ${openPageTab === 'history' ? 'show' : 'hide'}`}>
+          <div className="open-page-tab-content">
+            History Content
           </div>
         </div>
-        <div className="page-tab">
-          <input type="radio" id="page-tab-3" name="page-tabs" value='third' checked={pageTabValue === 'third'} onChange={handlePageTabChange}/>
-          <label className="page-tab-label" htmlFor="page-tab-3">Doctrine</label>
-          <div className="page-tab-content">
-            <p>THREE - Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis libero iure quos molestias, autem hic odio tenetur. Possimus eveniet impedit placeat illum temporibus. Blanditiis cupiditate voluptates nesciunt neque tempore nisi.</p>
+        <div className={`open-page-tab-container ${openPageTab === 'doctrine' ? 'show' : 'hide'}`}>
+          <div className="open-page-tab-content">
+            Doctrine Content
           </div>
         </div>
-        <div className="page-tab">
-          <input type="radio" id="page-tab-4" name="page-tabs" value='fourth' checked={pageTabValue === 'fourth'} onChange={handlePageTabChange}/>
-          <label className="page-tab-label" htmlFor="page-tab-4">CREC</label>
-          <div className="page-tab-content">
-            <p>FOUR - Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis libero iure quos molestias, autem hic odio tenetur. Possimus eveniet impedit placeat illum temporibus. Blanditiis cupiditate voluptates nesciunt neque tempore nisi.</p> 
+        <div className={`open-page-tab-container ${openPageTab === 'crec' ? 'show' : 'hide'}`}>
+          <div className="open-page-tab-content">
+            CREC Content
           </div>
         </div>
       </div>
     </div>
   )
 }
-
-export default PageTabs

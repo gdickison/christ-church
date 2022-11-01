@@ -1,0 +1,43 @@
+.bio-modal-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 85vw;
+  background-color: #fff;
+  padding: 2rem;
+  border: 1px solid rgba(0,0,0,0.3);
+  border-radius: 5px;
+  box-shadow: 10px 5px 5px rgba(0,0,0,0.3);
+  z-index: 50;
+  display: flex;
+}
+
+.bio-modal-container button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #fff;
+  border: none;
+}
+
+.bio-modal-container button:hover {
+  cursor: pointer;
+}
+
+.bio-image {
+  width: 40%;
+}
+
+.bio-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 2rem;
+}
+
+.bio-text h1 {
+  padding: 0;
+}

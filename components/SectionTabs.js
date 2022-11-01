@@ -1,95 +1,270 @@
 import { useState } from "react";
+import BioModal from "./BioModal";
+import male from '../public/portrait_placeholder_male.jpg'
+import Image from "next/image";
 
-const SectionTabs = () => {
-  const [sectionTabValue, setSectionTabValue] = useState('first')
+export default function SectionTabs(){
+  const [openSectionTab, setOpenSectionTab] = useState('pastors')
+  const [showBioModal, setShowBioModal] = useState(false)
+  const [bioName, setBioName] = useState('')
 
-  const handleSectionTabChange = e => {
-    console.log(e.target.value)
-    setSectionTabValue(e.target.value)
+  const openModal = (e) => {
+    setBioName(e.target.alt)
+    setShowBioModal(true)
   }
+
+  const closeModal = () => {
+    setShowBioModal(false)
+  }
+
+  const pastors = [
+    {
+      name: 'Douglas Wilson',
+      title: 'Senior Minister'
+    },
+    {
+      name: 'Ben Zornes',
+      title: 'Executive Minister / Downtown Pastor'
+    },
+    {
+      name: 'Dr. Mike Lawyer',
+      title: 'Pastor of Discipleship / Counseling'
+    },
+    {
+      name: 'Jared Longshore',
+      title: 'Associate Pastor'
+    },
+    {
+      name: 'Toby Sumpter',
+      title: "King's Cross Pastor (pro tem)"
+    },
+    {
+      name: 'Dr. Ben Merkle',
+      title: 'Christ Church Downtown Pastor'
+    },
+    {
+      name: 'Matt Gray',
+      title: 'Collegiate Reformed Fellowship Pastor'
+    }
+  ]
+
+  const elders = [
+    {
+      name: 'Nate Wilson',
+      title: 'Teaching Elder (on sabbatical)'
+    },
+    {
+      name: 'Dr. Tim Edwards',
+      title: 'Teaching Elder (on sabbatical)'
+    },
+    {
+      name: 'Csaba Leidenfrost',
+      title: 'Parish Elder / Bakwe Mission'
+    },
+    {
+      name: 'Andrew Crapuchettes',
+      title: 'Parish Elder'
+    },
+    {
+      name: 'Bill Church',
+      title: 'Parish Elder'
+    },
+    {
+      name: 'Carson Sensing',
+      title: 'Parish Elder'
+    },
+    {
+      name: 'Francis Foucachon',
+      title: 'Parish Elder'
+    },
+    {
+      name: 'Dr. Gordon Wilson',
+      title: 'Parish Elder'
+    },
+    {
+      name: 'Dr. John Grauke',
+      title: 'Parish Elder'
+    },
+    {
+      name: 'John Carnahan',
+      title: 'Parish Elder'
+    },
+    {
+      name: 'Luke Jankovic',
+      title: 'Parish Elder'
+    },
+    {
+      name: 'Matt Meyer',
+      title: 'Parish Elder'
+    },
+    {
+      name: 'Max Ryan',
+      title: 'Parish Elder'
+    },
+    {
+      name: 'Nick Holloway',
+      title: 'Parish Elder'
+    },
+    {
+      name: 'Tom Miller',
+      title: 'Parish Elder'
+    },
+    {
+      name: 'Tim Mortimore',
+      title: 'Parish Elder'
+    }
+  ]
+
+  const deacons = [
+    {
+      name: 'Isaac Grauke'
+    },
+    {
+      name: 'Jim Crapuchettes'
+    },
+    {
+      name: 'Rob Sentz'
+    },
+    {
+      name: 'Mike Church'
+    },
+    {
+      name: 'Dave Williams'
+    },
+    {
+      name: 'Marc Rust'
+    },
+    {
+      name: 'Greg Ditton'
+    },
+    {
+      name: 'Curtis Spencer'
+    },
+  ]
+
+  const staff = [
+    {
+      name: 'Christine LaMoreaux',
+      title: 'Administrative Secretary'
+    },
+    {
+      name: 'Lindsey Doolan',
+      title: 'Administrative Secretary'
+    },
+    {
+      name: 'Dr. Mark Reagan',
+      title: 'Music Director'
+    },
+    {
+      name: 'Shawn Paterson',
+      title: 'Content Director / Pastoral Assistant'
+    },
+    {
+      name: 'Aaron Ventura',
+      title: 'Pastoral Assistant'
+    },
+    {
+      name: 'Christine Stokes',
+      title: 'Accountant'
+    },
+    {
+      name: 'Mary Beth Bray',
+      title: 'Events Coordinator'
+    },
+    {
+      name: 'Zachary Wilke',
+      title: 'Pastoral Assistant'
+    },
+  ]
 
   return (
     <div className="section-tabs-container">
-      <h2>Section Title?</h2>
-      <div className="section-tabs">
-        <div className="section-tab">
-          <input type="radio" name="section-tabs" id="section-tab-1" className="section-tab-switch" value='first' checked={sectionTabValue === 'first'} onChange={handleSectionTabChange}/>
-          <label htmlFor="section-tab-1" className="section-tab-label">Pastors</label>
-          <div className="section-tab-content">
-            <p>
-              My father had a small estate in Nottinghamshire: I was the third of five sons. He sent me to Emanuel College in Cambridge at fourteen years old, where I resided three years, and applied myself close to my studies; but the charge of maintaining me, although I had a very scanty allowance, being too great for a narrow fortune, I was bound apprentice to Mr. James Bates, an eminent surgeon in London, with whom I continued four years.
-            </p>
-            <p>
-              My father had a small estate in Nottinghamshire: I was the third of five sons. He sent me to Emanuel College in Cambridge at fourteen years old, where I resided three years, and applied myself close to my studies; but the charge of maintaining me, although I had a very scanty allowance, being too great for a narrow fortune, I was bound apprentice to Mr. James Bates, an eminent surgeon in London, with whom I continued four years.
-            </p>
-            <p>
-              My father had a small estate in Nottinghamshire: I was the third of five sons. He sent me to Emanuel College in Cambridge at fourteen years old, where I resided three years, and applied myself close to my studies; but the charge of maintaining me, although I had a very scanty allowance, being too great for a narrow fortune, I was bound apprentice to Mr. James Bates, an eminent surgeon in London, with whom I continued four years.
-            </p>
-            <p>
-              My father had a small estate in Nottinghamshire: I was the third of five sons. He sent me to Emanuel College in Cambridge at fourteen years old, where I resided three years, and applied myself close to my studies; but the charge of maintaining me, although I had a very scanty allowance, being too great for a narrow fortune, I was bound apprentice to Mr. James Bates, an eminent surgeon in London, with whom I continued four years.
-            </p>
-            <p>
-              My father had a small estate in Nottinghamshire: I was the third of five sons. He sent me to Emanuel College in Cambridge at fourteen years old, where I resided three years, and applied myself close to my studies; but the charge of maintaining me, although I had a very scanty allowance, being too great for a narrow fortune, I was bound apprentice to Mr. James Bates, an eminent surgeon in London, with whom I continued four years.
-            </p>
-            <p>
-              My father had a small estate in Nottinghamshire: I was the third of five sons. He sent me to Emanuel College in Cambridge at fourteen years old, where I resided three years, and applied myself close to my studies; but the charge of maintaining me, although I had a very scanty allowance, being too great for a narrow fortune, I was bound apprentice to Mr. James Bates, an eminent surgeon in London, with whom I continued four years.
-            </p>
-            <p>
-              My father had a small estate in Nottinghamshire: I was the third of five sons. He sent me to Emanuel College in Cambridge at fourteen years old, where I resided three years, and applied myself close to my studies; but the charge of maintaining me, although I had a very scanty allowance, being too great for a narrow fortune, I was bound apprentice to Mr. James Bates, an eminent surgeon in London, with whom I continued four years.
-            </p>
-            <p>
-              My father had a small estate in Nottinghamshire: I was the third of five sons. He sent me to Emanuel College in Cambridge at fourteen years old, where I resided three years, and applied myself close to my studies; but the charge of maintaining me, although I had a very scanty allowance, being too great for a narrow fortune, I was bound apprentice to Mr. James Bates, an eminent surgeon in London, with whom I continued four years.
-            </p>
-            <p>
-              My father had a small estate in Nottinghamshire: I was the third of five sons. He sent me to Emanuel College in Cambridge at fourteen years old, where I resided three years, and applied myself close to my studies; but the charge of maintaining me, although I had a very scanty allowance, being too great for a narrow fortune, I was bound apprentice to Mr. James Bates, an eminent surgeon in London, with whom I continued four years.
-            </p>
-            <p>
-              My father had a small estate in Nottinghamshire: I was the third of five sons. He sent me to Emanuel College in Cambridge at fourteen years old, where I resided three years, and applied myself close to my studies; but the charge of maintaining me, although I had a very scanty allowance, being too great for a narrow fortune, I was bound apprentice to Mr. James Bates, an eminent surgeon in London, with whom I continued four years.
-            </p>
-            <p>
-              My father had a small estate in Nottinghamshire: I was the third of five sons. He sent me to Emanuel College in Cambridge at fourteen years old, where I resided three years, and applied myself close to my studies; but the charge of maintaining me, although I had a very scanty allowance, being too great for a narrow fortune, I was bound apprentice to Mr. James Bates, an eminent surgeon in London, with whom I continued four years.
-            </p>
-            <p>
-              My father had a small estate in Nottinghamshire: I was the third of five sons. He sent me to Emanuel College in Cambridge at fourteen years old, where I resided three years, and applied myself close to my studies; but the charge of maintaining me, although I had a very scanty allowance, being too great for a narrow fortune, I was bound apprentice to Mr. James Bates, an eminent surgeon in London, with whom I continued four years.
-            </p>
-            <p>
-              My father had a small estate in Nottinghamshire: I was the third of five sons. He sent me to Emanuel College in Cambridge at fourteen years old, where I resided three years, and applied myself close to my studies; but the charge of maintaining me, although I had a very scanty allowance, being too great for a narrow fortune, I was bound apprentice to Mr. James Bates, an eminent surgeon in London, with whom I continued four years.
-            </p>
-            <p>
-              My father had a small estate in Nottinghamshire: I was the third of five sons. He sent me to Emanuel College in Cambridge at fourteen years old, where I resided three years, and applied myself close to my studies; but the charge of maintaining me, although I had a very scanty allowance, being too great for a narrow fortune, I was bound apprentice to Mr. James Bates, an eminent surgeon in London, with whom I continued four years.
-            </p>
-            <p>
-              My father had a small estate in Nottinghamshire: I was the third of five sons. He sent me to Emanuel College in Cambridge at fourteen years old, where I resided three years, and applied myself close to my studies; but the charge of maintaining me, although I had a very scanty allowance, being too great for a narrow fortune, I was bound apprentice to Mr. James Bates, an eminent surgeon in London, with whom I continued four years.
-            </p>
-            <p>
-              My father had a small estate in Nottinghamshire: I was the third of five sons. He sent me to Emanuel College in Cambridge at fourteen years old, where I resided three years, and applied myself close to my studies; but the charge of maintaining me, although I had a very scanty allowance, being too great for a narrow fortune, I was bound apprentice to Mr. James Bates, an eminent surgeon in London, with whom I continued four years.
-            </p>
-            <p>
-              My father had a small estate in Nottinghamshire: I was the third of five sons. He sent me to Emanuel College in Cambridge at fourteen years old, where I resided three years, and applied myself close to my studies; but the charge of maintaining me, although I had a very scanty allowance, being too great for a narrow fortune, I was bound apprentice to Mr. James Bates, an eminent surgeon in London, with whom I continued four years.
-            </p>
-            <p>
-              My father had a small estate in Nottinghamshire: I was the third of five sons. He sent me to Emanuel College in Cambridge at fourteen years old, where I resided three years, and applied myself close to my studies; but the charge of maintaining me, although I had a very scanty allowance, being too great for a narrow fortune, I was bound apprentice to Mr. James Bates, an eminent surgeon in London, with whom I continued four years.
-            </p>
+      <div className="section-tabs-content">
+        <ul className="section-tabs-list">
+          <li className="section-tabs-list-item">
+            <a
+              href="#"
+              onClick={() => setOpenSectionTab('pastors')}
+              className={`section-tabs-list-item-link ${openSectionTab === 'pastors' ? 'open-tab' : ''}`}>Pastors</a>
+          </li>
+          <li className="section-tabs-list-item">
+            <a
+              href="#"
+              onClick={() => setOpenSectionTab('elders')}
+              className={`section-tabs-list-item-link ${openSectionTab === 'elders' ? 'open-tab' : ''}`}>Elders</a>
+          </li>
+          <li className="section-tabs-list-item">
+            <a
+              href="#"
+              onClick={() => setOpenSectionTab('deacons')}
+              className={`section-tabs-list-item-link ${openSectionTab === 'deacons' ? 'open-tab' : ''}`}>Deacons</a>
+          </li>
+          <li className="section-tabs-list-item">
+            <a
+              href="#"
+              onClick={() => setOpenSectionTab('staff')}
+              className={`section-tabs-list-item-link ${openSectionTab === 'staff' ? 'open-tab' : ''}`}>Staff</a>
+          </li>
+        </ul>
+        <div className={`open-section-tab-container ${openSectionTab === 'pastors' ? 'show' : 'hide'}`}>
+          <div className="open-section-tab-content">
+            {pastors.map((person, idx) => {
+              return (
+                <div key={idx} className="bio">
+                  <Image src={male} alt={person.name} width={250} onClick={openModal}/>
+                  <p>{person.name}</p>
+                  <p>{person.title}</p>
+                </div>
+              )
+            })}
           </div>
         </div>
-        <div className="section-tab">
-          <input type="radio" name="section-tabs" id="section-tab-2" className="section-tab-switch" value='second' checked={sectionTabValue === 'second'} onChange={handleSectionTabChange}/>
-          <label htmlFor="section-tab-2" className="section-tab-label">Elders</label>
-          <div className="section-tab-content">My father now and then sending me small sums of money, I laid them out in learning navigation, and other parts of the mathematics, useful to those who intend to travel, as I always believed it would be, some time or other, my fortune to do. </div>
+        <div className={`open-section-tab-container ${openSectionTab === 'elders' ? 'show' : 'hide'}`}>
+          <div className="open-section-tab-content">
+            {elders.map((person, idx) => {
+              return (
+                <div key={idx} className="bio">
+                  <Image src={male} alt={person.name} width={250} onClick={openModal}/>
+                  <p>{person.name}</p>
+                  <p>{person.title}</p>
+                </div>
+              )
+            })}
+          </div>
         </div>
-        <div className="section-tab">
-          <input type="radio" name="section-tabs" id="section-tab-3" className="section-tab-switch" value='third' checked={sectionTabValue === 'third'} onChange={handleSectionTabChange}/>
-          <label htmlFor="section-tab-3" className="section-tab-label">Deacons</label>
-          <div className="section-tab-content">When I left Mr. Bates, I went down to my father: where, by the assistance of him and my uncle John, and some other relations, I got forty pounds, and a promise of thirty pounds a year to maintain me at Leyden: there I studied physic two years and seven months, knowing it would be useful in long voyages.</div>
+        <div className={`open-section-tab-container ${openSectionTab === 'deacons' ? 'show' : 'hide'}`}>
+          <div className="open-section-tab-content">
+            {deacons.map((person, idx) => {
+              return (
+                <div key={idx} className="bio">
+                  <Image src={male} alt={person.name} width={250} onClick={openModal}/>
+                  <p>{person.name}</p>
+                  <p>{person.title}</p>
+                </div>
+              )
+            })}
+          </div>
         </div>
-        <div className="section-tab">
-          <input type="radio" name="section-tabs" id="section-tab-4" className="section-tab-switch" value='fourth' checked={sectionTabValue === 'fourth'} onChange={handleSectionTabChange}/>
-          <label htmlFor="section-tab-4" className="section-tab-label">Staff</label>
-          <div className="section-tab-content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis, vel. Illo, vel. Ullam perspiciatis delectus, fugiat magni hic aut, corrupti consequatur cumque maiores enim, labore debitis quia maxime esse dolores?</div>
+        <div className={`open-section-tab-container ${openSectionTab === 'staff' ? 'show' : 'hide'}`}>
+          <div className="open-section-tab-content">
+            {staff.map((person, idx) => {
+              return (
+                <div key={idx} className="bio">
+                  <Image src={male} alt={person.name} width={250} onClick={openModal}/>
+                  <p>{person.name}</p>
+                  <p>{person.title}</p>
+                </div>
+              )
+            })}
+          </div>
         </div>
       </div>
+      {showBioModal &&
+        <BioModal
+          closeModal={closeModal}
+          bioName={bioName}
+        />
+      }
     </div>
   )
 }
-
-export default SectionTabs

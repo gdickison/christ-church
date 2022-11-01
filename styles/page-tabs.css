@@ -1,84 +1,54 @@
 .page-tabs-container {
-	height: 100%;
-	margin: 0 auto;
-  padding-inline: 4rem;
+  margin-inline: auto;
 }
 
-.page-tabs-container h1 {
-  padding-left: 1rem;
+.page-tabs-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
 }
 
-.page-tabs {
-	position: relative;
-	display: flex;
-	min-height: 100vh;
-	overflow: scroll;
+.page-tabs-list {
+  display: flex;
+  gap: 0.5rem;
+  list-style: none;
+  width: 100%;
+  justify-content: space-around;
+  padding: 0;
+  font-size: 1.5rem;
 }
 
-.page-tab {
-	flex: 1;
-  padding-inline: 1rem;
+.page-tabs-list-item {
+  width: 12rem;
+  text-align: center;
 }
 
-.page-tab-label {
-	display: block;
-  height: 4rem;
-	padding: 1rem;
-	text-align: center;
-	background: rgba(48, 105, 179, 0.2);
-	cursor: pointer;
-	transition: background 0.5s ease;
-	font-size: 1.5rem;
+.page-tabs-list-item-link {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  border: 2px solid gray;
+  margin-inline: auto;
+  width: 100%;
 }
 
-.page-tab-label:hover {
-	background: rgba(48, 105, 179, 1);
+.page-tabs-list-item-link:not(.open-tab):hover {
+  background-color: rgba(48, 105, 179, 0.3);
+  border-color: rgba(48, 105, 179, 0.3);
+}
+
+.open-tab {
   color: #fff;
+  background-color: rgba(48, 105, 179, 1);
+  border-color: rgba(48, 105, 179, 1);
+  transition: background 0.5s ease;
 }
 
-.page-tab-content {
-	position: absolute;
-	left: 0; bottom: 0; right: 0;
-	top: 40px; 
-	margin-top: 1.5rem;
-	padding: 20px;
-	background: #fff;
-	
-	transition: 
-		opacity 0.8s ease,
-		transform 0.8s ease		;
-	
-	/* show/hide */
-		opacity: 0;
-		transform: scale(0.1);
-		transform-origin: top left;
-	
+.open-page-tab-container.hide {
+  display: none;
 }
 
-.page-tab [type=radio] { display: none; }
-[type=radio]:checked ~ label {
-	background: rgba(48, 105, 179, 1);
-  color: #fff;
-  text-decoration: underline;
-	z-index: 2;
-}
-
-[type=radio]:checked ~ label ~ .page-tab-content {
-	z-index: 1;
-	
-	/* show/hide */
-		opacity: 1;
-		transform: scale(1);
-}
-
-@media screen and (max-width: 767px) {
-	.page-tabs { min-height: 400px;}
-}
-
-@media screen and (max-width: 480px) {
-	.page-tabs { min-height: 580px; }
-	.page-tab label { 
-		height: 60px;
-	}
-	.page-tab-content { top: 60px; }
+.open-page-tab-container.show {
+  display: block;
 }

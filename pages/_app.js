@@ -1,6 +1,7 @@
 import '../styles/globals.css'
 import '../styles/page-tabs.css'
 import '../styles/section-tabs.css'
+import '../styles/bio-modal.css'
 import '../styles/nav.css'
 import '../styles/hero.css'
 import '../styles/events.css'
