@@ -1,0 +1,30 @@
+.about-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-block: 3rem;
+  background-color: rgba(48, 105, 179, 0.2);
+  color: #fff;
+  background-image: url(/cc_blueprint_banner.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about-header h1,
+.about-header h2 {
+  font-weight: 300;
+  margin: 0;
+}
+
+.about-header h1 {
+  text-transform: uppercase;
+}
+
+.about-header h2 {
+  font-size: 2rem;
+}
+
+.about-header span {
+  margin-inline: 1rem;
+}

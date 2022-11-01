@@ -8,6 +8,11 @@ const About = () => {
       <Head>
         <title>Christ Church - About</title>
       </Head>
+      <div className="about-header">
+        <h1>About Christ Church </h1>
+        <span> - </span>
+        <h2>our leadership, history, and doctrine</h2>
+      </div>
       <PageTabs/>
     </>
   )
