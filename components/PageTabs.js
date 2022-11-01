@@ -11,7 +11,7 @@ const PageTabs = () => {
 
   return (
     <div className="page-tabs-container">
-      <h1>Page Title (About Christ Church)</h1>
+      <h1>About Christ Church</h1>
       <div className="page-tabs">
         <div className="page-tab">
           <input type="radio" id="page-tab-1" name="page-tabs" value='first' checked={pageTabValue === 'first'} onChange={handlePageTabChange}/>
