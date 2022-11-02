@@ -9,6 +9,7 @@ import '../styles/hero.css'
 import '../styles/events.css'
 import '../styles/footer.css'
 import '../styles/worship-with-us.css'
+import '../styles/sermons.css'
 
 import Layout from '../components/Layout'
 

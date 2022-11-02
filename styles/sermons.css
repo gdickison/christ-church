@@ -1,0 +1,37 @@
+.sermons-header-container {
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+
+.sermons-header {
+  width: 100%;
+  height: 200px;
+  background-image: url(https://www.christkirk.com/wp-content/uploads/2016/02/douglas-wilson-christkirk-moscow-2016-02.jpeg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-block: 3rem;
+  color: #fff;
+  background-position: 50% 60%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(.65)
+}
+
+.sermons-headline {
+  position: absolute;
+}
+
+.sermons-headline h1 {
+  font-size: 3rem;
+  color: #fff;
+  margin: 0;
+}
+
+.sermons-current {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

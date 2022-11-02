@@ -21,7 +21,7 @@ const Home = () => {
             <Link href='/worship-with-us'>
               <button>Worship With Us</button>
             </Link>
-            <Link href='https://www.christkirk.com/sermons/'>
+            <Link href='/sermons/'>
               <button>Sermons</button>
             </Link>
           </div>
