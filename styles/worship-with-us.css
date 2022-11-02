@@ -1,0 +1,128 @@
+.worship-header {
+  background-image: url(/cc_elevation_pencil.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-block: 3rem;
+  background-color: rgba(48, 105, 179, 0.2);
+  color: #fff;
+  background-position: 50% 60%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 250px;
+}
+
+.worship-headline {
+  text-align: center;
+  margin-block: 3rem;
+}
+
+.worship-location-card {
+  margin: 2rem 3rem;
+  border: 1px solid rgba(0,0,0,0.1);
+  box-shadow: 10px 5px 5px rgba(0,0,0,0.3);
+}
+
+.worship-location-title {
+  text-align: center;
+}
+
+.worship-location-title h1 {
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.worship-location-title h2 {
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.worship-location-section {
+  display: flex;
+  margin: 1rem 2rem;
+}
+
+.worship-location-map {
+  width: 50%;
+}
+
+.mapouter {
+  border: 1px solid rgba(0,0,0,0.1);
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+}
+
+#gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  width: 100%;
+}
+
+.worship-location-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 2rem;
+  max-width: 50%;
+}
+
+.worship-location-details h2 {
+  margin: 0;
+}
+
+/* .worship-location-address {
+  margin-block: 1rem;
+} */
+
+.worship-location-address p {
+  margin-block: 0.5rem;
+}
+
+.worship-location-times {
+  margin-block: 2rem;
+}
+
+.worship-location-times p {
+  margin-block: 0.5rem;
+}
+
+.bulletin-download:hover {
+  text-decoration: underline;
+}
+
+.worship-modal:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.worship-modal-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 1550px;
+  background-color: #fff;
+  padding: 3.5rem;
+  border: 1px solid rgba(0,0,0,0.3);
+  border-radius: 5px;
+  box-shadow: 10px 5px 5px rgba(0,0,0,0.3);
+  z-index: 50;
+  display: flex;
+}
+
+.worship-modal-container button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #fff;
+  border: none;
+}
+
+.worship-modal-container button:hover {
+  cursor: pointer;
+}
+
+.worship-video {
+  margin-inline: auto;
+}

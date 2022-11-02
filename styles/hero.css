@@ -1,10 +1,11 @@
 .hero-container {
   position: relative;
-  height: 600px;
-  background-image: url(/cc_hero.jpg);
+  min-height: 550px;
+  background-image: url(/cc_elevation_pencil.jpg);
+  background-attachment: fixed;
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100%;
+  background-position: 50% 10%;
+  background-size: contain;
   width: 100%;
 }
 
@@ -13,7 +14,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #fff;
+  color: #000;
   text-align: center;
   width: 100%;
 }
@@ -29,7 +30,7 @@
 .hero-headline h2 {
   font-size: 2.1rem;
   letter-spacing: 0.4rem;
-  font-weight: 300;
+  font-weight: 400;
   font-style: italic;
 }
 

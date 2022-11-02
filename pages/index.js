@@ -18,7 +18,7 @@ const Home = () => {
             <Link href='/about'>
               <button>About Christ Church</button>
             </Link>
-            <Link href='/about'>
+            <Link href='/worship-with-us'>
               <button>Worship With Us</button>
             </Link>
             <Link href='https://www.christkirk.com/sermons/'>
@@ -26,7 +26,7 @@ const Home = () => {
             </Link>
           </div>
         </div>
-        <div style={{textAlign: 'center', marginBlock: '3.5rem'}}>
+        <div style={{textAlign: 'center', marginBlock: '2rem'}}>
           <h1>You are warmly welcome to join us for one of our Lord’s Day worship services!</h1>
         </div>
         <Events/>
