@@ -6,7 +6,7 @@
   background-color: rgba(48, 105, 179, 0.2);
   color: #fff;
   background-image: url(/cc_blueprint_banner.jpeg);
-  background-position: center;
+  background-position: 50% 65%;
   background-repeat: no-repeat;
   background-size: cover;
 }

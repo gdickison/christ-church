@@ -45,6 +45,7 @@
   background-color: #fff;
   padding: 0.5rem 1.5rem;
   border: 2px solid rgba(48, 105, 179, 1);
+  border-bottom: none;
 }
 
 .open-section-tab-container.hide {

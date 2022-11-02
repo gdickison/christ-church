@@ -1,5 +1,6 @@
 import '../styles/globals.css'
 import '../styles/about-page.css'
+import '../styles/beliefs.css'
 import '../styles/page-tabs.css'
 import '../styles/section-tabs.css'
 import '../styles/bio-modal.css'

@@ -1,5 +1,7 @@
 import { useState } from "react"
 import SectionTabs from "./SectionTabs"
+import Beliefs from "./Beliefs"
+import Ministries from "./Ministries"
 
 export default function PageTabs(){
   const [openPageTab, setOpenPageTab] = useState('leadership')
@@ -18,14 +20,14 @@ export default function PageTabs(){
           <li className="page-tabs-list-item">
             <a
               href="#"
-              onClick={() => setOpenPageTab('history')}
-              className={`page-tabs-list-item-link ${openPageTab === 'history' ? 'open-tab' : ''}`}>History</a>
+              onClick={() => setOpenPageTab('doctrine')}
+              className={`page-tabs-list-item-link ${openPageTab === 'doctrine' ? 'open-tab' : ''}`}>Doctrine & Beliefs</a>
           </li>
           <li className="page-tabs-list-item">
             <a
               href="#"
-              onClick={() => setOpenPageTab('doctrine')}
-              className={`page-tabs-list-item-link ${openPageTab === 'doctrine' ? 'open-tab' : ''}`}>Doctrine</a>
+              onClick={() => setOpenPageTab('ministries')}
+              className={`page-tabs-list-item-link ${openPageTab === 'ministries' ? 'open-tab' : ''}`}>Ministries</a>
           </li>
           <li className="page-tabs-list-item">
             <a
@@ -39,14 +41,14 @@ export default function PageTabs(){
             <SectionTabs/>
           </div>
         </div>
-        <div className={`open-page-tab-container ${openPageTab === 'history' ? 'show' : 'hide'}`}>
-          <div className="open-page-tab-content">
-            History Content
-          </div>
-        </div>
         <div className={`open-page-tab-container ${openPageTab === 'doctrine' ? 'show' : 'hide'}`}>
           <div className="open-page-tab-content">
-            Doctrine Content
+            <Beliefs/>
+          </div>
+        </div>
+        <div className={`open-page-tab-container ${openPageTab === 'ministries' ? 'show' : 'hide'}`}>
+          <div className="open-page-tab-content">
+            <Ministries/>
           </div>
         </div>
         <div className={`open-page-tab-container ${openPageTab === 'crec' ? 'show' : 'hide'}`}>
