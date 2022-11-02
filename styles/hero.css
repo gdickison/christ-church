@@ -1,11 +1,11 @@
 .hero-container {
   position: relative;
-  min-height: 550px;
+  height: 600px;
   background-image: url(/cc_elevation_pencil.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: 50% 10%;
-  background-size: contain;
+  background-size: 100% 700px;
   width: 100%;
 }
 

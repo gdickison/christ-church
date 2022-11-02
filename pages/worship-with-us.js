@@ -41,14 +41,14 @@ export default function WorshipWithUs () {
               <div className="worship-location-times">
                 <p>First Service - 8:30am</p>
                 <p>Second Service - 10:30am</p>
+                <p className="bulletin-download">
+                  <a href="/CC_Uptown_Bulletin_2022_10_31.pdf" download>
+                    Click Here for the Weekly Liturgy
+                  </a>
+                </p>
               </div>
-              <p className="bulletin-download">
-                <a href="/CC_Uptown_Bulletin_2022_10_31.pdf" download>
-                  Click Here for the Weekly Liturgy
-                </a>
-              </p>
               <div className="worship-location-info">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime quis aperiam ipsam cupiditate libero nam, architecto enim sed reprehenderit magnam sunt molestias esse consequatur labore. Voluptatum in nam consequatur libero!</p>
+                <p><span>Parking: </span>Limited parking is available in the field house lot. We have reserved spaces there for people who cannot walk distances. Parking is also available in the Logos School lots on Baker Street. Street parking is available on Baker Street and A Street - just be sure not to park in the bike lanes.</p>
               </div>
             </div>
           </div>
@@ -74,14 +74,14 @@ export default function WorshipWithUs () {
               <div className="worship-location-times">
                 <p>First Service - 8:30am</p>
                 <p>Second Service - 10:30am</p>
+                <p className="bulletin-download">
+                  <a href="/CC_Uptown_Bulletin_2022_10_31.pdf" download>
+                    Click Here for the Weekly Liturgy
+                  </a>
+                </p>
               </div>
-              <p className="bulletin-download">
-                <a href="/CC_Uptown_Bulletin_2022_10_31.pdf" download>
-                  Click Here for the Weekly Liturgy
-                </a>
-              </p>
               <div className="worship-location-info">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime quis aperiam ipsam cupiditate libero nam, architecto enim sed reprehenderit magnam sunt molestias esse consequatur labore. Voluptatum in nam consequatur libero!</p>
+                <p><span>Parking: </span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime quis aperiam ipsam cupiditate libero nam, architecto enim sed reprehenderit magnam sunt molestias esse consequatur labore. Voluptatum in nam consequatur libero!</p>
               </div>
             </div>
           </div>
@@ -106,14 +106,14 @@ export default function WorshipWithUs () {
               </address>
               <div className="worship-location-times">
                 <p>Service - 9:00am</p>
+                <p className="bulletin-download">
+                  <a href="/CC_Uptown_Bulletin_2022_10_31.pdf" download>
+                    Click Here for the Weekly Liturgy
+                  </a>
+                </p>
               </div>
-              <p className="bulletin-download">
-                <a href="/CC_Uptown_Bulletin_2022_10_31.pdf" download>
-                  Click Here for the Weekly Liturgy
-                </a>
-              </p>
               <div className="worship-location-info">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime quis aperiam ipsam cupiditate libero nam, architecto enim sed reprehenderit magnam sunt molestias esse consequatur labore. Voluptatum in nam consequatur libero!</p>
+                <p><span>Parking: </span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime quis aperiam ipsam cupiditate libero nam, architecto enim sed reprehenderit magnam sunt molestias esse consequatur labore. Voluptatum in nam consequatur libero!</p>
               </div>
             </div>
           </div>

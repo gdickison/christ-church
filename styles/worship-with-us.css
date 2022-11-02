@@ -85,8 +85,16 @@
   margin-block: 0.5rem;
 }
 
+.bulletin-download {
+  font-weight: 600;
+}
+
 .bulletin-download:hover {
   text-decoration: underline;
+}
+
+.worship-location-info span {
+  font-weight: 600;
 }
 
 .worship-modal:hover {

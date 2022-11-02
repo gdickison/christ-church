@@ -28,7 +28,7 @@ a {
 }
 
 .layout {
-  max-width: 1600px;
+  max-width: 1450px;
 }
 
 @media (prefers-color-scheme: dark) {
