@@ -14,6 +14,7 @@ import '../styles/music.css'
 import '../styles/get-involved.css'
 import '../styles/give.css'
 import '../styles/contact.css'
+import '../styles/resources.css'
 
 import Layout from '../components/Layout'
 

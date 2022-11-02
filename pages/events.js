@@ -5,6 +5,7 @@ export default function Events () {
   return (
     <div className="events-page-container">
       <h1>Events</h1>
+      <h2>(Draft)</h2>
       <div className="events-page-content">
         <div className="events-content-image">
           <Image src={gaImage} alt="grace agenda" width={700}/>

@@ -17,6 +17,7 @@ export default function WorshipWithUs () {
       <div className="worship-header"></div>
       <div className="worship-headline">
         <h1>You are warmly welcome to join us for one of our Lord&apos;s Day worship services!</h1>
+        <h2>(Draft)</h2>
         <h2 className="worship-modal" onClick={openWorshipModal}>What to Expect</h2>
       </div>
       <div className="worship-content">

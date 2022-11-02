@@ -19,6 +19,7 @@ export default function Ministries () {
   return (
     <div className="beliefs-container">
       <h1 className="beliefs-headline">Our Ministries</h1>
+      <h2>(Draft to show ministry items - styles will be added to final)</h2>
       <div className="beliefs-content">
         <ul className="beliefs-list">
         {ministries.map((ministry, idx) => {

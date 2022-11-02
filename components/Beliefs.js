@@ -12,6 +12,7 @@ export default function Beliefs () {
   return (
     <div className="beliefs-container">
       <h1 className="beliefs-headline">Doctrine & Beliefs</h1>
+      <h2>(Draft to show included items - styles will be added to final)</h2>
       <div className="beliefs-content">
         <ul className="beliefs-list">
           {beliefs.map((belief, idx) => {

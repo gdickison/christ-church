@@ -17,6 +17,9 @@ const NavMenu = () => {
           <Link href='/music'>Music</Link>
         </ul>
         <ul className="nav-menu-link">
+          <Link href='/resources'>Resources</Link>
+        </ul>
+        <ul className="nav-menu-link">
           <Link href='/get-involved'>Get Involved</Link>
         </ul>
         <ul className="nav-menu-link">

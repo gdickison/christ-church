@@ -1,0 +1,22 @@
+.resources-container {
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.resources-list {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.resources-list-item {
+  margin-block: 2rem;
+}
+
+.resources-list-item:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
