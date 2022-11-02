@@ -48,3 +48,48 @@
 .event-link:hover {
   text-decoration: underline;
 }
+
+.events-page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 75vh;
+}
+
+.events-page-content {
+  display: flex;
+  border: 1px solid rgba(0,0,0,0.5);
+  border-radius: 2px;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+  width: 85%;
+}
+
+.events-content-image {
+  display: flex;
+  align-items: center;
+}
+
+.events-content-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 2rem;
+}
+
+.events-content-text button {
+  background-color: rgba(48, 105, 250, 1);
+  color: #fff;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  padding-block: 1rem;
+  letter-spacing: 0.2rem;
+  width: 50%;
+  margin-inline: auto;
+  border: none;
+  border-radius: 2px;
+}
+
+.events-content-text button:hover {
+  background-color: rgba(0, 0, 150, 1);
+  cursor: pointer;
+}
