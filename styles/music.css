@@ -1,0 +1,10 @@
+.music-container {
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.music-container h1 {
+  width: 75%;
+}

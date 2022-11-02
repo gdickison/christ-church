@@ -10,6 +10,10 @@ import '../styles/events.css'
 import '../styles/footer.css'
 import '../styles/worship-with-us.css'
 import '../styles/sermons.css'
+import '../styles/music.css'
+import '../styles/get-involved.css'
+import '../styles/give.css'
+import '../styles/contact.css'
 
 import Layout from '../components/Layout'
 

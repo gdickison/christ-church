@@ -14,16 +14,16 @@ const NavMenu = () => {
           <Link href='/events'>Events</Link>
         </ul>
         <ul className="nav-menu-link">
-          <Link href='#'>Music</Link>
+          <Link href='/music'>Music</Link>
         </ul>
         <ul className="nav-menu-link">
-          <Link href='#'>Get Involved</Link>
+          <Link href='/get-involved'>Get Involved</Link>
         </ul>
         <ul className="nav-menu-link">
-          <Link href='#'>Give</Link>
+          <Link href='/give'>Give</Link>
         </ul>
         <ul className="nav-menu-link">
-          <Link href='#'>Contact</Link>
+          <Link href='/contact'>Contact</Link>
         </ul>
       </li>
       <div className="nav-menu-burger">
